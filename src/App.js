@@ -1,19 +1,22 @@
-import './App.css';
-import Btn from './Btn';
+import Btn from "./Btn";
+import "./App.css"
 
 function App() {
+  const handleClick = (value) => {
+    alert(value);
+  };
+
   return (
     <div className="App">
       <h1>Hello World</h1>
 
       <p>Good Evening...!</p>
 
-      <Btn username={"just"} />
-      <Btn username={"All"} />
-      <Btn username={"Movies"} />
-      <Btn username={"Cars"} />
-      <Btn username={"Cycles"} />
-      
+      <Btn username={"just"} handleClick={handleClick} />
+      <Btn username={"All"} handleClick={handleClick} />
+      <Btn username={"Movies"} handleClick={handleClick} />
+      <Btn username={"Cars"} handleClick={handleClick} />
+      <Btn username={"Cycles"} handleClick={handleClick} />
     </div>
   );
 }

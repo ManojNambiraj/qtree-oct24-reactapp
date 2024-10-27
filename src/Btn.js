@@ -1,12 +1,19 @@
-import React from 'react'
+import React from "react";
 
 function Btn(props) {
-    
   return (
     <div>
-      <button>{props.username}</button>    {/* Interpolation */}
+      <button
+        onClick={() => {
+          props.handleClick(props.username);
+        }}
+        // className="btnColor"   ----> External CSS
+        style={{ backgroundColor: "red" }}
+      >
+        {props.username} {/* Interpolation */}
+      </button>
     </div>
-  )
+  );
 }
 
-export default Btn
+export default Btn;

@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.btnColor{
+  background-color: blue;
+}
+
+.main{
+  /* border: 3px solid black; */
+  height: 100vh;
+}
+
+/* .left, .right {
+  border: 2px solid red;
+  height: 100vh;
+} */

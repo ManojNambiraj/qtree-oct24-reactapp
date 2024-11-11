@@ -1,13 +1,15 @@
 import React from "react";
+import CRUDApp from "./CRUDApp";
 // import ReactRouting from "./ReactRouting";
 // import ShoppingCart from "./ShoppingCart";
-import ShoppingCartUsingReducer from "./ShoppingCartUsingReducer";
+// import ShoppingCartUsingReducer from "./ShoppingCartUsingReducer";
 
 function App() {
   return (
     <div>
-
-      <ShoppingCartUsingReducer />
+      <CRUDApp />
+  {/* hieiiiiiiiiii */}
+      {/* <ShoppingCartUsingReducer /> */}
 
       {/* <ShoppingCart /> */}
 

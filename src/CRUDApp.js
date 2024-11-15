@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import UserList from './UserList'
 import CreateUser from './CreateUser'
+import EditUser from './EditUser'
 
 const CRUDApp = () => {
   return (
@@ -9,6 +10,7 @@ const CRUDApp = () => {
       <Routes>
         <Route path='/' element={<UserList />} />
         <Route path='/createUser' element={<CreateUser />} />
+        <Route path='/edit/:id' element={<EditUser />} />
       </Routes>
     </BrowserRouter>
   )
